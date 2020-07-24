@@ -144,7 +144,15 @@ class RegisterForm extends React.Component {
               value={this.state.fields.password}
               onChange={this.handleChange}
             />
-            <div className="errorMsg">{this.state.errors.password}</div>
+             <div className="errorMsg">{this.state.errors.password}</div>
+            <label>Date of Birth</label>
+            <input
+              type="text"
+              name="dob"
+              value={this.state.fields.password}
+              onChange={this.handleChange}
+            />
+            <div className="errorMsg">{this.state.errors.dob}</div>
             <input type="submit" className="button" value="Register" />
           </form>
         </div>
